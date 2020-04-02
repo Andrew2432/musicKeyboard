@@ -10,6 +10,10 @@
 		<meta name="keywords" content="piano, keyboard, music, JS" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Music Keyboard</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="lib/css/style.css" />
 	</head>
 	<body>
@@ -17,49 +21,97 @@
 			<span>MusicKeyboard</span>
 		</header>
 		<main class="container">
+			<section class="description">
+				<h4>Press the keys to play!</h4>
+				<h5>Note: Kindly enable CAPS LOCK</h5>
+			</section>
 			<section class="keys">
 				<div class="key" data-key="65">
-					<kbd>A</kbd>
-					<span class="sound">A</span>
+					<kbd data-key="65">A</kbd>
+					<span class="sound" data-key="65">A</span>
 				</div>
 
 				<div class="key" data-key="83">
-					<kbd>S</kbd>
-					<span class="sound">B</span>
+					<kbd data-key="83">S</kbd>
+					<span class="sound" data-key="83">B</span>
 				</div>
 
 				<div class="key" data-key="68">
-					<kbd>D</kbd>
-					<span class="sound">C</span>
+					<kbd data-key="68">D</kbd>
+					<span class="sound" data-key="68">C</span>
 				</div>
 
 				<div class="key" data-key="70">
-					<kbd>F</kbd>
-					<span class="sound">C#</span>
+					<kbd data-key="70">F</kbd>
+					<span class="sound" data-key="70">C#</span>
 				</div>
 
 				<div class="key" data-key="71">
-					<kbd>G</kbd>
-					<span class="sound">D</span>
+					<kbd data-key="71">G</kbd>
+					<span class="sound" data-key="71">D</span>
 				</div>
 
 				<div class="key" data-key="72">
-					<kbd>H</kbd>
-					<span class="sound">E</span>
+					<kbd data-key="72">H</kbd>
+					<span class="sound" data-key="72">E</span>
 				</div>
 
 				<div class="key" data-key="74">
-					<kbd>J</kbd>
-					<span class="sound">F</span>
+					<kbd data-key="74">J</kbd>
+					<span class="sound" data-key="74">F</span>
 				</div>
 
+				<div class="key" data-key="75">
+					<kbd data-key="75">K</kbd>
+					<span class="sound" data-key="75">F#</span>
+				</div>
 				<div class="key" data-key="76">
-					<kbd>L</kbd>
-					<span class="sound">F#</span>
+					<kbd data-key="76">L</kbd>
+					<span class="sound" data-key="76">G</span>
 				</div>
 			</section>
+			<section>
+				<audio
+					src="lib/music/4409__pinkyfinger__piano-notes-1-octave/a.wav"
+					data-key="65"
+				></audio>
+				<audio
+					src="lib/music/4409__pinkyfinger__piano-notes-1-octave/b.wav"
+					data-key="83"
+				></audio>
+				<audio
+					src="lib/music/4409__pinkyfinger__piano-notes-1-octave/c.wav"
+					data-key="68"
+				></audio>
+				<audio
+					src="lib/music/4409__pinkyfinger__piano-notes-1-octave/c2.wav"
+					data-key="70"
+				></audio>
+				<audio
+					src="lib/music/4409__pinkyfinger__piano-notes-1-octave/d.wav"
+					data-key="71"
+				></audio>
+				<audio
+					src="lib/music/4409__pinkyfinger__piano-notes-1-octave/e.wav"
+					data-key="72"
+				></audio>
+				<audio
+					src="lib/music/4409__pinkyfinger__piano-notes-1-octave/f.wav"
+					data-key="74"
+				></audio>
+				<audio
+					src="lib/music/4409__pinkyfinger__piano-notes-1-octave/f2.wav"
+					data-key="75"
+				></audio>
+				<audio
+					src="lib/music/4409__pinkyfinger__piano-notes-1-octave/g.wav"
+					data-key="76"
+				></audio>
+			</section>
 		</main>
-		<footer></footer>
+		<footer class="footer">
+			<h5>Made with <i></i> by <a href="" target="#blank">Andrew</a></h5>
+		</footer>
 		<script src="lib/js/app.js"></script>
 	</body>
 </html>

@@ -5,20 +5,87 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-color: #0288d1;
+  font-family: 'Merriweather', serif;
+  color: #ffffff;
 }
 
 .header {
   width: 100%;
-  height: 5vh;
+  height: 10vh;
   background-color: aqua;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  color: #000;
+  font-size: 1.3rem;
 }
 
+.description {
+  text-align: center;
+}
 
 .container {
   max-width: 80%;
-  height: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.keys {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  padding: 1rem;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  margin: 1rem;
+  flex-basis: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+  outline: none;
+}
+
+.key>kbd {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.key>span {
+  font-size: 0.8rem;
+}
+
+.footer {
+  background-color: #fff;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: underline;
+}
+
+.playing {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.2);
+  box-shadow: 1px 1px 2px 2px#000;
 }
