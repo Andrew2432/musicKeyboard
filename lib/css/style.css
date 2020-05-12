@@ -8,6 +8,7 @@ body {
   background-color: #0288d1;
   font-family: 'Merriweather', serif;
   color: #ffffff;
+  outline: none;
 }
 
 .header {
@@ -57,12 +58,12 @@ body {
   outline: none;
 }
 
-.key>kbd {
+.key > kbd {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.key>span {
+.key > span {
   font-size: 0.8rem;
 }
 
